@@ -1,0 +1,1 @@
+alert("website is going to be lunch soon");
