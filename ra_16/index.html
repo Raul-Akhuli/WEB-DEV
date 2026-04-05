@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* Class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* ID selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector  - when p is a direct child of div */
+        div>p {
+            background-color: brown;
+            color: blue;
+        }
+
+        /* descendant selector - when p is a descendant of div any level deep */
+        div p {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited {
+            /* the site visited this color show up */
+            color: red;
+        }
+
+        a:link {
+            /* before visiting this color show up */
+            color: green
+        }
+
+        a:active{
+            /* during the clicking time it sows background color red  */
+            background-color: skyblue;
+        }
+
+        a.hover{
+            /* during hover upon the text. */
+            background-color: green;
+        }
+
+        p:first-child{
+            /* the first child of the parent element */
+            background-color: rgb(238, 7, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am div.
+        <article>
+            <p>I am a paragraph inside the red div.</p>
+        </article>
+    </div>
+    <div id="green">
+        I am also div.
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.github.com">Go to GitHub</a>
+    <a target="_blank" href="https://www.stackoverflow.com">Go to Stack Overflow</a>
+</body>
+
+</html>
