@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* If they are same type of selector the whoever the last one own.*/
+
+        /* If they are different types of selectors, the one with higher specificity wins. 
+            order   (inline > ID > class > element > universal) */
+
+
+        /*Universal Selector: 0
+        Element selectors and pseudo-elements: 1
+        Class selectors, attribute selectors, and pseudo-classes: 10
+        ID selectors: 100
+        Inline styles: 1000*/
+
+        /*total capacity = 1 + 10 = 11, greater than other selectors*/
+        h1.yellow {
+            color: aqua;
+        }
+
+        .yellow {
+            color: yellow
+                /*important is the highest specificity, it will override all the other selectors. */
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        [data-x=a] {
+            /*attribute selector*/
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS specificity</h1>
+    </div>
+</body>
+
+</html>
