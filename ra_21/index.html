@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /*viewpoint width auto adjust*/
+
+            /*It come in the center if and only if it is a block element. It's not for inline elements*/
+            margin: auto;
+
+            height: 10vh;
+            /*viewpoint height auto adjust*/
+
+            background-color: lightblue;
+        }
+
+
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /*viewpoint width auto adjust*/
+
+            /*It come in the center if and only if it is a block element. It's not for inline elements*/
+
+            margin: 23px auto;
+            /* this margin value act upon top-bottom and auto act on left-right*/
+
+            min-height: 80vh;
+            /*viewpoint height auto adjust*/
+
+            font-size: 18px;
+            /* by default font size is 16px*/
+
+            background-color: lightblue;
+
+        }
+
+        .container p {
+            font-size: 1em;
+            /* 1em is equal to the font size of the parent element, which is 18px in this case. So, 1em will be 18px. */
+
+            /* if it is '2em' <p/> is will be 36px */
+            width: 50%;
+            border: 2px solid red;
+        }
+
+
+        html {
+            font-size: 10px;
+        }
+
+        .container p2 {
+            font-size: 2rem;
+            /* 1rem is equal to the font size of the root element (html), which is 10px in this case. So, 2rem will be 20px. */
+        }
+
+        .container p3 {
+            font-size: 2em;
+            /* 1em is equal to the font size of the parent element, which is 18px in this case. So, 2em will be 36px. */
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color:brown;
+            font-size: 22px;
+            /* width:100vmin; */
+            width:80vw;
+        }
+
+
+        .container p5{
+            font-size: 1em;
+            width: 50%;             /*only works for parent*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit similique aut vel veniam perferendis. Dolor
+            aliquam incidunt sequi? Ullam doloremque cum ipsum distinctio, sint molestiae sunt beatae qui fugiat,
+            quisquam libero quia? Ipsum eos omnis reiciendis rerum dolorum repellendus, magni neque facere eaque
+            possimus, soluta, adipisci voluptatem laboriosam consequuntur ea excepturi natus id quod nulla. Quos.
+        </p>
+        <p2>
+            This is a paragraph with a different font size.
+        </p2>
+        <p3>
+            This is a paragraph with an invalid font size unit.
+        </p3>
+        <p4>
+            <!-- after applying this lorem you realise that that box is auto adjustable. -->
+            <!-- lorem999 -->
+        </p4>
+
+        <p5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur nemo nihil tenetur assumenda reprehenderit vel numquam quidem? Magni blanditiis voluptate inventore reprehenderit cupiditate rerum dolor incidunt recusandae, ullam quidem laborum porro libero laudantium repudiandae perferendis, doloremque quod at rem officia labore neque modi qui.
+        </p5>
+    </div>
+
+    <div class="mycont">
+        <p>
+            This is my cont.
+        </p>
+    </div>
+</body>
+
+</html>
