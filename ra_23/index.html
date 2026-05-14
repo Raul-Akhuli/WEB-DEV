@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        box-shadow: h-offset v-offset blur spread color inset;
+
+        h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+        blur: The larger the value, the blurrier the shadow.
+        spread: Expands or shrinks the shadow size.
+        color: Defines the shadow color.
+        inset: Makes the shadow inner.
+        
+        */
+
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px #da9090;
+        }
+
+
+        /*
+        text-shadow: h-offset v-offset blur color;
+        h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+        blur: The larger the value, the blurrier the shadow.
+        color: Defines the shadow color.
+        */
+
+
+        .text-element{
+            text-shadow: 7px 7px 4px #d62222;
+            outline: 2px solid blue;           /*apply form the outside*/
+            border: 2px solid black;          /*apply form the inside*/
+            outline-offset: 46px;              /*distance between the element and the outline*/
+
+            border-radius: 13px;              /*round the corners of the border*/
+
+
+
+
+            /*outline follow the borders*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas praesentium magni cumque voluptatibus culpa aperiam placeat tempora nisi unde libero! Excepturi, laboriosam veritatis pariatur consequuntur provident iure a exercitationem fugit. Omnis consectetur nesciunt odio optio natus officia porro placeat quas ducimus? Tempore quaerat commodi quo.
+    </p>
+</body>
+
+</html>
