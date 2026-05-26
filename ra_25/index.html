@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+
+            /* when the item gets out of the box scrollbar arrive o/w no scrollbar*/
+            overflow: auto;
+
+            /* no wrap sentenses in one line leads had to come the horizontal scrollbar*/
+            white-space: nowrap;
+
+            /* whatever extra text are going out of the box just replace it with ... */
+            text-overflow: ellipsis;
+        }
+
+
+        .box2{
+            margin: 25px;
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+
+            overflow: auto;
+
+            /* you can set up a scrollbar from which direction it overlap. */
+            /* overflow-x:auto;
+            overflow-y: auto; */
+
+            /* you can wite previous 2 lines in one line hidden --> X axis, auto --> Y axis*/
+
+            overflow: hidden auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       I am a good boy and i love to write Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum at adipisci est, illo totam atque natus laboriosam, aliquid modi fugit incidunt porro quisquam, facilis asperiores laudantium dicta molestias unde dolore consequatur! Dolorum aspernatur id, fuga explicabo dicta commodi porro placeat blanditiis sapiente doloribus voluptates neque.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, officiis quisquam harum sunt error ducimus beatae illo impedit perspiciatis nemo tenetur laboriosam odio reprehenderit natus sint unde similique veniam mollitia quod! Magnam quidem minima, vel ut omnis nemo eveniet sequi reiciendis enim voluptates odit totam laborum nisi cum error. Perspiciatis fugiat velit illum aut beatae debitis obcaecati culpa dolor deserunt! Laudantium aliquid qui aperiam eius?
+    </div>
+</body>
+</html>
